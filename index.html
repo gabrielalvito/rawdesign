@@ -18,7 +18,6 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand">
-                <h4>UKM PCC</h4>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Beranda</a>
+                        <a class="nav-link" href="#homebg">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Tentang</a>
@@ -48,7 +47,7 @@
                 <ul class="navbar-nav flex-row">
                     <li class="nav-item">
                         <a href="{{url('login')}}"><button class="btn btn-primary rounded-3 "
-                                type="button">Login</button></a>
+                                type="button">Masuk</button></a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +55,7 @@
     </nav>
 
     <!-- Home -->
-    <section id="home" class="d-flex align-items-center min-vh-100">
+    <section id="homebg" class="d-flex align-items-center min-vh-100">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -66,8 +65,14 @@
                     <h4 data-aos="fade-up" data-aos-delay="100" class="mt-3 mb-5">"Youth, Creative, and innovative in
                         future technology"</h4>
                     <a data-aos="fade-up" data-aos-delay="200" href="{{url('login')}}"><button
-                            class="btn btn-brand rounded-3 " type="button">Daftar</button></a>
+                            class="btn btn-outline-light rounded-3 " type="button">Unduh Panduan</button></a>
+                    <a data-aos="fade-up" data-aos-delay="200" href="{{url('login')}}"><button
+                            class="btn btn-primary rounded-3 " type="button">Daftar</button></a>
                 </div>
+                <!-- <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+                    <img class="img-logo center-block d-block mx-auto" src="assets/img/logo.png" alt=""
+                        style="height: auto; width:50%;">
+                </div> -->
             </div>
         </div>
     </section>
@@ -76,28 +81,37 @@
     <section id="about" class="section-padding section-connector">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-                    <div class="setion-title text-center">
-                        <h1>Tentang</h1>
-                        <p>Techcomfest adalah salah satu wujud misi dan peran aktif UKM Polytechnic Computer Club dalam
+                <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+                    <img class="img-logo center-block d-block mx-auto" src="assets/img/logo.png" alt=""
+                        style="height: auto; width:50%;">
+                </div>
+                <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="setion-title">
+                        <h1 class="text-brand">Tentang Techcomfest</h1>
+                    </div>
+                    <div class="section-body">
+                        <p>
+                            Techcomfest adalah salah satu wujud misi dan peran aktif UKM Polytechnic Computer
+                            Club dalam
                             mengikuti perkembangan teknologi dalam bidang IT.
                             Dengan diadakannya kegiatan Techcomfest, diharapkan siswa/i SMA/SMK sederajat dan
                             Mahasiswa/i tingkat nasional dapat menyalurkan
-                            inovasi dan kreativitas mereka khususnya dalam bidang teknologi dan informasi.</p>
-                        <div class="line"></div>
+                            inovasi dan kreativitas mereka khususnya dalam bidang teknologi dan informasi.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+   
     <!-- Category -->
     <section id="category" class="section-padding section-connector">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100">
-                        <h1>Kategori Lomba</h1>
+                        <h1 class="text-brand">Kategori Lomba</h1>
                         <p>Berikut adalah kategori lomba di Techcomfest</p>
                         <div class="line"></div>
                     </div>
@@ -105,30 +119,41 @@
             </div>
             <div class="row gy-4 text-center">
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service py-5 px-4 border rounded-4 shadow">
+                    <div class="service py-5 px-4 border rounded-4">
                         <div class="service-icon">
-                            <i class="ri-clapperboard-fill"></i>
+                            <i class="ri-file-paper-2-line"></i>
                         </div>
-                        <h5 class="mt-4">Multimedia</h5>
+                        <!-- <div class="service-icon">
+                                    <img src="assets\img\pie-chart.png" alt="">
+                                    </div> -->
+                        <h5 class="mt-4">Infografis</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere nihil</p>
+                        <a data-aos="fade-up" data-aos-delay="200" href="{{url('login')}}"><button
+                                class="btn btn-outline-primary rounded-3 " type="button">Daftar Disini</button></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service py-5 px-4 border rounded-4 shadow">
+                    <div class="service py-5 px-4 border rounded-4">
                         <div class="service-icon">
-                            <i class="ri-rss-fill"></i>
+                            <i class="ri-flag-line"></i>
                         </div>
-                        <h5 class="mt-4">Network</h5>
+                        <!-- <img src="assets\img\hacker.png" alt=""> -->
+                        <h5 class="mt-4">CTF</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere nihil</p>
+                        <a data-aos="fade-up" data-aos-delay="200" href="{{url('login')}}"><button
+                                class="btn btn-outline-primary rounded-3 " type="button">Daftar Disini</button></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service py-5 px-4 border rounded-4 shadow">
+                    <div class="service py-5 px-4 border rounded-4">
                         <div class="service-icon">
-                            <i class="ri-settings-5-fill"></i>
+                            <i class="ri-window-fill"></i>
                         </div>
-                        <h5 class="mt-4">Software</h5>
+                        <!-- <img src="assets\img\web-design.png" alt=""> -->
+                        <h5 class="mt-4">Web Desain</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere nihil</p>
+                        <a data-aos="fade-up" data-aos-delay="200" href="{{url('login')}}"><button
+                                class="btn btn-outline-primary rounded-3 " type="button">Daftar Disini</button></a>
                     </div>
                 </div>
             </div>
@@ -141,7 +166,7 @@
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-delay="100">
                     <div class="setion-title text-center">
-                        <h1>Time Line</h1>
+                        <h1 class="text-brand">Time Line</h1>
                         <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto dignissimos saepe iste soluta. Aperiam exercitationem doloribus soluta.</p> -->
                         <div class="line"></div>
                     </div>
@@ -149,62 +174,31 @@
             </div>
             <div class="row gy-5">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body shadow">
-                                            <div class="hori-timeline" dir="ltr" data-aos="fade-up"
-                                                data-aos-delay="300">
-                                                <ul class="list-inline events">
-                                                    <li class="list-inline-item event-list">
-                                                        <div class="px-4">
-                                                            <div class="event-date bg-soft-primary text-primary">2 June
-                                                            </div>
-                                                            <h5 class="font-size-16">Pendaftaran</h5>
-                                                            <p class="text-muted">It will be as simple as occidental in
-                                                                fact it will be Occidental Cambridge friend</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-inline-item event-list">
-                                                        <div class="px-4">
-                                                            <div class="event-date bg-soft-success text-success">5 June
-                                                            </div>
-                                                            <h5 class="font-size-16">Registrasi</h5>
-                                                            <p class="text-muted">Everyone realizes why a new common
-                                                                language one could refuse translators.</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-inline-item event-list">
-                                                        <div class="px-4">
-                                                            <div class="event-date bg-soft-danger text-danger">7 June
-                                                            </div>
-                                                            <h5 class="font-size-16">Lomba</h5>
-                                                            <p class="text-muted">If several languages coalesce the
-                                                                grammar of the resulting simple and regular</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-inline-item event-list">
-                                                        <div class="px-4">
-                                                            <div class="event-date bg-soft-warning text-warning">8 June
-                                                            </div>
-                                                            <h5 class="font-size-16">Pengumuman</h5>
-                                                            <p class="text-muted">Languages only differ in their
-                                                                pronunciation and their most common words.</p>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end card -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <table class="table text-center" data-aos="fade-up" data-aos-delay="150">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>TANGGAL</th>
+                                <th>KEGIATAN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- FAQ -->
@@ -213,70 +207,88 @@
             <div class="row">
                 <div class="col-12">
                     <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100">
-                        <h1>FAQ</h1>
+                        <h1 class="text-brand">FAQ</h1>
                         <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto dignissimos
                             saepe iste soluta. Aperiam exercitationem doloribus soluta.</p> -->
                         <div class="line"></div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div id="accordion">
-                    <div class="card shadow">
-                        <div class="card-header" style="border-radius : 5px;">
-                            <a class="btn rounded-1 border-0" data-bs-toggle="collapse" href="#collapseOne">
-                                Collapsible Group Item #1
-                            </a>
-                        </div>
-                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-                            <div class="card-body" style="border-radius : 15px;">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.
+            <div class="container" style="color: black;" data-aos="fade-up" data-aos-delay="150">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
                         </div>
                     </div>
-                    <div class="card shadow">
-                        <div class="card-header" style="border-radius : 5px;">
-                            <a class="collapsed btn rounded-1 border-0" data-bs-toggle="collapse" href="#collapseTwo">
-                                Collapsible Group Item #2
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-                            <div class="card-body" style="border-radius : 5px;">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
                         </div>
                     </div>
-                    <div class="card shadow">
-                        <div class="card-header" style="border-radius : 5px;">
-                            <a class="collapsed btn rounded-1 border-0" data-bs-toggle="collapse" href="#collapseThree">
-                                Collapsible Group Item #3
-                            </a>
-                        </div>
-                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-                            <div class="card-body" style="border-radius : 15px;">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
-            
+
         </div>
     </section>
 
     <!-- Panduan -->
     <section id="guide" class="section-padding section-connector">
-          <div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100">
-                        <h1>Panduan Lomba</h1>
+                        <h1 class="text-brand">Panduan Lomba</h1>
                         <p>Silakan unduh panduan lomba di bawah ini</p>
                         <div class="line"></div>
                     </div>
@@ -285,9 +297,8 @@
             <div class="row gy-5">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="bp">
-                        <img src="./assets/images/blog-post1.jpg" alt="">
                         <div class="bp-content pt-4 text-center">
-                            <h4>Multimedia</h4>
+                            <h4>Infografis</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             <a href="#" class="custom-link">
                                 <span>Unduh</span>
@@ -298,9 +309,8 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="bp">
-                        <img src="./assets/images/blog-post2.jpg" alt="">
                         <div class="bp-content pt-4 text-center">
-                            <h4>Network</h4>
+                            <h4>CTF</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             <a href="#" class="custom-link">
                                 <span>Unduh</span>
@@ -313,7 +323,7 @@
                     <div class="bp">
                         <img src="./assets/images/blog-post3.jpg" alt="">
                         <div class="bp-content pt-4 text-center">
-                            <h4>Software</h4>
+                            <h4>Desain Web</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             <a href="#" class="custom-link">
                                 <span>Unduh</span>
@@ -327,7 +337,7 @@
     </section>
 
     <!-- Sponsor -->
-    <section>
+    <!-- <section>
         <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100">
             <h1>Sponsor</h1>
             <div class="line"></div>
@@ -335,7 +345,7 @@
         <div class="container">
             
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="footer-top">
